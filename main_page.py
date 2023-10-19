@@ -55,7 +55,7 @@ def ayurbot():
             if prompt in brain.c_yes:
                 bot_response = brain.questions(1)
             
-            if prompt in ans_1:
+            if prompt in brain.ans_1:
                 bot_response = brain.questions(2)
 
             message_placeholder.markdown(bot_response)
