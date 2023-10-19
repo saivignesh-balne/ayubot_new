@@ -52,10 +52,10 @@ def ayurbot():
             if prompt in brain.c_hi:
                 bot_response = "Please answer the following questions honestly and accurately."
 
-            if count==1 and prompt in brain.c_yes:
+            if prompt in brain.c_yes:
                 bot_response = brain.questions(1)
             
-            if count==2 and prompt in ans_1:
+            if prompt in ans_1:
                 bot_response = brain.questions(2)
 
             message_placeholder.markdown(bot_response)
