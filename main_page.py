@@ -21,14 +21,14 @@ def ayurbot():
     )
     st.markdown(
         """
-        <h1 style="text-align: center; color: black; font-family: 'Times New Roman', Times, serif;">AYURBOT</h1>
+        <h1 style="text-align: center; color: white; font-family: 'Times New Roman', Times, serif;">AYURBOT</h1>
         """,
         unsafe_allow_html=True
     )
     st.subheader('', divider='rainbow')
     st.markdown(
         """
-        <h4 style="color: black;">Hi there! I am Chatbot specific to determine the Prakriti of an individual. So now lets determine your Prakriti!</h5>
+        <h4 style="color: white;">Hi there! I am Chatbot specific to determine the Prakriti of an individual. So now lets determine your Prakriti!</h5>
         """,
         unsafe_allow_html=True
     )
