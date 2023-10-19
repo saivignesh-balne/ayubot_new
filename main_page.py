@@ -3,8 +3,6 @@ import brain
 import random
 
 home = False
-[theme]
-base="dark"
 
 def ayurbot():
     count = 0
