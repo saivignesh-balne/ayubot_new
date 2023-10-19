@@ -6,14 +6,14 @@ c_yes = ("yup","done", "yes", "yeah", "sure", "ok", "okay", "roger", "you bet", 
 prakriti = "Prakriti is a term used in traditional Indian philosophy, particularly in Ayurveda, to describe the inherent constitution or nature of an individual. In Ayurveda, it is believed that every person has a unique combination of three fundamental energies or doshas, known as Vata, Pitta, and Kapha, which make up their prakriti."
 bot_intro = "Hi there! I am Chatbot specific to determine the Prakriti of an individual. So now lets determine your Prakriti!"
 ques_intro = "Answer these few questions as accurate as possible."
-questions = [
+questions = (
         "How would you describe your body frame? (Skinny, medium, or perfect) ",
         "What is your typical body temperature? (Cold, normal, warm) ",
         "Do you tend to have dry skin or hair? (Yes/No) ",
         "How is your appetite? (Variable, strong, or steady) ",
         "How do you handle stress? (Anxious, angry, or calm) ",
         "Are you more of a morning or night person? (Morning, neither, night) "
-    ]
+)
 
 #answers
 ans_1 = ("skinny", "medium", "perfect")
