@@ -66,7 +66,7 @@ def main():
     page_bg = """
     <style>
     [data-testid="stAppViewContainer"] {
-    background-image: url("https://c4.wallpaperflare.com/wallpaper/586/603/742/minimalism-4k-for-mac-desktop-wallpaper-preview.jpg");
+    background-image: url("https://www.wallpapers.net/amazing-sunrise-hd-wallpaper/download/5120x2160.jpg");
     background-size: cover;
     }        
     </style>
