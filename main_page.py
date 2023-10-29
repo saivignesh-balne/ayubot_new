@@ -66,7 +66,7 @@ def main():
     page_bg = """
     <style>
     [data-testid="stAppViewContainer"] {
-    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpapercave.com%2Fsun-rise-wallpapers&psig=AOvVaw01pjtOAJ1NjZfCI46QmwJr&ust=1698677645228000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJiMkL_Bm4IDFQAAAAAdAAAAABAE");
+    background-image: url("https://wallpapercave.com/wp/CdBbiZ7.jpg");
     background-size: cover;
     }        
     </style>
