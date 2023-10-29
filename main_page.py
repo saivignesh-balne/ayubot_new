@@ -77,16 +77,16 @@ def main():
     )
     st.markdown(
         """
-        <h1 style="text-align: center; color: black; font-family: 'Times New Roman', Times, serif;">PRAKRITI</h1>
+        <h1 style="text-align: center; color: white; font-family: 'Times New Roman', Times, serif;">PRAKRITI</h1>
         """,
         unsafe_allow_html=True
     )
     st.subheader('', divider='rainbow')
     st.markdown(
         """
-        <h5 style="color: black;">It is a term used in traditional Indian philosophy, particularly in Ayurveda, to describe the inherent constitution or nature of an individual.</h5>
-        <h5 style="color: black;">In Ayurveda, it is believed that every person has a unique combination of three fundamental energies or doshas known as VATA, PITTA and KAPHA, which make up their Prakriti.</h5>
-        <h5 style="color: black;">These doshas represent different combinationof five elements (Earth, Water, Fire, Air and Ether) and play physical and physcological characteristics as well as their susceptibility to certain health issues.</h5>
+        <h5 style="color: white;">It is a term used in traditional Indian philosophy, particularly in Ayurveda, to describe the inherent constitution or nature of an individual.</h5>
+        <h5 style="color: white;">In Ayurveda, it is believed that every person has a unique combination of three fundamental energies or doshas known as VATA, PITTA and KAPHA, which make up their Prakriti.</h5>
+        <h5 style="color: white;">These doshas represent different combinationof five elements (Earth, Water, Fire, Air and Ether) and play physical and physcological characteristics as well as their susceptibility to certain health issues.</h5>
         
         """,
         unsafe_allow_html=True
