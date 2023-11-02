@@ -66,7 +66,7 @@ def main():
     page_bg = """
     <style>
     [data-testid="stAppViewContainer"] {
-    background-image: url("https://wallpapercave.com/wp/CdBbiZ7.jpg");
+    background-image: url("blob:https://web.whatsapp.com/30e09336-eb03-4da0-be62-aabebf0eac60");
     background-size: cover;
     }        
     </style>
