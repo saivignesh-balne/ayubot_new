@@ -66,7 +66,7 @@ def main():
     page_bg = """
     <style>
     [data-testid="stAppViewContainer"] {
-    background-image: url("blob:https://web.whatsapp.com/30e09336-eb03-4da0-be62-aabebf0eac60");
+    background-image: url("https://media.istockphoto.com/id/500891249/photo/country-road-at-dawn.jpg?s=2048x2048&w=is&k=20&c=Owwhr5JqOF9xlp2L3abtNbwY1mBCl8sotXAMFT2KFQw=");
     background-size: cover;
     }        
     </style>
