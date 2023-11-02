@@ -66,7 +66,7 @@ def main():
     page_bg = """
     <style>
     [data-testid="stAppViewContainer"] {
-    background-image: url("https://media.istockphoto.com/id/500891249/photo/country-road-at-dawn.jpg?s=2048x2048&w=is&k=20&c=Owwhr5JqOF9xlp2L3abtNbwY1mBCl8sotXAMFT2KFQw=");
+    background-image: url("https://wallpapercave.com/wp/CdBbiZ7.jpg");
     background-size: cover;
     }        
     </style>
