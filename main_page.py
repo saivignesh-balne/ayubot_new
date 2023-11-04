@@ -57,9 +57,10 @@ def ayurbot():
 
             if prompt in brain.c_yes:
                 for i in range(5):
-                    bot_response = brain.questions[i]
+                    bot_response = brain.questions[count]
 
         logic(prompt,a,b,c)
+        count+=1
         message_placeholder.markdown(bot_response)
         st.session_state.messages.append({"role": "assistant","content": bot_response})
 
