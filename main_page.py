@@ -25,7 +25,7 @@ def ayurbot():
     )
     st.markdown(
         """
-        <h1 style="text-align: center; color: white; font-family: 'Algerian';">AYURBOT</h1>
+        <h2 style="text-align: center; color: white; font-family: 'Algerian';">AYURBOT</h1>
         """,
         unsafe_allow_html=True
     )
@@ -103,7 +103,7 @@ def main():
     )
     st.markdown(
         """
-        <h1 style="text-align: center; color: black; font-family: 'Times New Roman', Times, serif;">PRAKRITI</h1>
+        <h2 style="text-align: center; color: black; font-family: 'Algerian';">PRAKRITI</h1>
         """,
         unsafe_allow_html=True
     )
