@@ -25,7 +25,7 @@ def ayurbot():
     )
     st.markdown(
         """
-        <h1 style="text-align: center; color: white; font-family: 'Times New Roman', Times, serif;">AYURBOT</h1>
+        <h1 style="text-align: center; color: white; font-family: 'Algerian';">AYURBOT</h1>
         """,
         unsafe_allow_html=True
     )
