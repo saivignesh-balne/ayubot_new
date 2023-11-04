@@ -52,20 +52,19 @@ def ayurbot():
             message_placeholder = st.empty()
             bot_response=""
             prompt = prompt.lower()
-            
-            if prompt in brain.c_hi:
-                bot_response = "Please answer the following questions honestly and accurately."
 
-            if prompt in brain.c_yes:
-                questions = True
-
-            if prompt in brain.ans_1 or brain.ans_2 or brain.ans_3:
+            if prompt:
                bot_response = brain.questions[count]
                count+=1
 
-        logic(prompt,a,b,c)
+            if prompt in brain.c_hi:
+                bot_response = "Please answer the following questions honestly and accurately."
+            if prompt in brain.c_yes:
+                questions = True
+
+            logic(prompt,a,b,c)
         
-        message_placeholder.markdown(bot_response)
+            message_placeholder.markdown(bot_response)
         st.session_state.messages.append({"role": "assistant","content": bot_response})
 
 def result(a,b,c):
