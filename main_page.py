@@ -66,7 +66,6 @@ def ayurbot():
             message_placeholder.markdown(bot_response)
         st.session_state.messages.append({"role": "assistant","content": bot_response})
         count +=1
-        return count
 
 def result(a,b,c):
     if a>b and a>c:
