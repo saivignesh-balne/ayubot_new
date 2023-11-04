@@ -55,7 +55,7 @@ def ayurbot():
 
             if prompt:
                bot_response = brain.questions[count]
-               count+=1
+               return count+=1
 
             if prompt in brain.c_hi:
                 bot_response = "Please answer the following questions honestly and accurately."
