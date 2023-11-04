@@ -12,8 +12,10 @@ questions = (
         "Do you tend to have dry skin or hair? (Yes/No) ",
         "How is your appetite? (Variable, strong, or steady) ",
         "How do you handle stress? (Anxious, angry, or calm) ",
-        "Are you more of a morning or night person? (Morning, neither, night) "
+        "Are you more of a morning or night person? (Morning, night, neither) "
 )
 
 #answers
-ans_1 = ("skinny", "medium", "perfect")
+ans_1 = ("skinny", "cold", "yes","variable","anxious","morning")
+ans_2 = ("medium","normal","no","strong","angry","neither")
+ans_3 = ("perfect","warm","steady","calm","night")
