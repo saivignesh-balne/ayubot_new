@@ -95,7 +95,7 @@ def main():
     background-position: center;
     background-size: cover;
     }        
-    @import url('https://fonts.cdnfonts.com/css/samarkan');
+    
     </style>
     """
     st.markdown(
@@ -104,6 +104,7 @@ def main():
     )
     st.markdown(
         """
+        @import url('https://fonts.cdnfonts.com/css/samarkan');
         <h2 style="text-align: center; color: black; font-family: 'Samarkan', sans-serif;">PRAKRITI</h1>
         """,
         unsafe_allow_html=True
