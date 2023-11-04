@@ -56,31 +56,30 @@ def ayurbot():
                 bot_response = "Please answer the following questions honestly and accurately."
 
             if prompt in brain.c_yes:
-                questions = True
                 bot_response = brain.questions[0]
 
             logic(prompt,a,b,c) 
-            if prompt and count ==1:
+            elif prompt and count ==1:
                 bot_response = brain.questions[1]
                 
                 
             logic(prompt,a,b,c)
-            if prompt and count ==2:
+            elif prompt and count ==2:
                 bot_response = brain.questions[2]
                 
                 
             logic(prompt,a,b,c)
-            if prompt and count ==3:
+            elif prompt and count ==3:
                 bot_response = brain.questions[3]
                 
             
             logic(prompt,a,b,c)
-            if prompt and count ==4:
+            elif prompt and count ==4:
                 bot_response = brain.questions[4]
                 
                 
             logic(prompt,a,b,c)
-            if prompt and count ==5:
+            elif prompt and count ==5:
                 bot_response = brain.questions[5]
                 result(a,b,c)
 
