@@ -5,6 +5,7 @@ import random
 home = False
 
 def ayurbot():
+    questions=False
     a=0
     b=0
     c=0
@@ -55,28 +56,30 @@ def ayurbot():
                 bot_response = "Please answer the following questions honestly and accurately."
 
             if prompt in brain.c_yes:
+                questions = True
                 bot_response = brain.questions[0]
+            if question == True
 
-            logic(prompt,a,b,c) 
-            if prompt!="":
-                bot_response = brain.questions[1]
+                logic(prompt,a,b,c) 
+                if prompt!="":
+                    bot_response = brain.questions[1]
+                    
+                logic(prompt,a,b,c)
+                if prompt!="":
+                    bot_response = brain.questions[2]
+                    
+                logic(prompt,a,b,c)
+                if prompt!="":
+                    bot_response = brain.questions[3]
                 
-            logic(prompt,a,b,c)
-            if prompt!="":
-                bot_response = brain.questions[2]
-                
-            logic(prompt,a,b,c)
-            if prompt!="":
-                bot_response = brain.questions[3]
-            
-            logic(prompt,a,b,c)
-            if prompt!="":
-                bot_response = brain.questions[4]
-                
-            logic(prompt,a,b,c)
-            if prompt!="":
-                bot_response = brain.questions[5]
-                result(a,b,c)
+                logic(prompt,a,b,c)
+                if prompt!="":
+                    bot_response = brain.questions[4]
+                    
+                logic(prompt,a,b,c)
+                if prompt!="":
+                    bot_response = brain.questions[5]
+                    result(a,b,c)
 
             message_placeholder.markdown(bot_response)
         st.session_state.messages.append({"role": "assistant","content": bot_response})
