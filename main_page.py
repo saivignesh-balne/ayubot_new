@@ -81,7 +81,7 @@ def ayurbot():
                     bot_response = brain.questions[5]
                     result(a,b,c)
 
-            message_placeholder.markdown(bot_response)
+        message_placeholder.markdown(bot_response)
         st.session_state.messages.append({"role": "assistant","content": bot_response})
 
 def result(a,b,c):
