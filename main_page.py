@@ -81,7 +81,7 @@ def ayurbot():
             message_placeholder.markdown(bot_response)
         st.session_state.messages.append({"role": "assistant","content": bot_response})
 
-def result(x,y,z):
+def result(a,b,c):
     if a>b and a>c:
         bot_response = "Congratulations your prakriti is VATA"
     if b>c and b>a:
