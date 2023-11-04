@@ -63,27 +63,27 @@ def ayurbot():
             if questions == True:
 
                 logic(prompt,a,b,c) 
-                if prompt and count =1:
+                if prompt and count ==1:
                     bot_response = brain.questions[1]
                     count=2
                     
                 logic(prompt,a,b,c)
-                if prompt and count =2:
+                if prompt and count ==2:
                     bot_response = brain.questions[2]
                     count =3
                     
                 logic(prompt,a,b,c)
-                if prompt and count =3:
+                if prompt and count ==3:
                     bot_response = brain.questions[3]
                     count =4
                 
                 logic(prompt,a,b,c)
-                if prompt and count =4:
+                if prompt and count ==4:
                     bot_response = brain.questions[4]
                     count =5
                     
                 logic(prompt,a,b,c)
-                if prompt and count =5:
+                if prompt and count ==5:
                     bot_response = brain.questions[5]
                     result(a,b,c)
 
