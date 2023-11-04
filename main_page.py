@@ -5,6 +5,7 @@ import random
 home = False
 
 def ayurbot():
+    count =0
     questions=False
     a=0
     b=0
@@ -58,26 +59,31 @@ def ayurbot():
             if prompt in brain.c_yes:
                 questions = True
                 bot_response = brain.questions[0]
+                count =1
             if questions == True:
 
                 logic(prompt,a,b,c) 
-                if prompt:
+                if prompt and count =1:
                     bot_response = brain.questions[1]
+                    count=2
                     
                 logic(prompt,a,b,c)
-                if prompt:
+                if prompt and count =2:
                     bot_response = brain.questions[2]
+                    count =3
                     
                 logic(prompt,a,b,c)
-                if prompt:
+                if prompt and count =3:
                     bot_response = brain.questions[3]
+                    count =4
                 
                 logic(prompt,a,b,c)
-                if prompt:
+                if prompt and count =4:
                     bot_response = brain.questions[4]
+                    count =5
                     
                 logic(prompt,a,b,c)
-                if prompt:
+                if prompt and count =5:
                     bot_response = brain.questions[5]
                     result(a,b,c)
 
