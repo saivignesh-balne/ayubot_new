@@ -91,11 +91,11 @@ def result(x,y,z):
 
 def logic(user,x,y,z):
     if user in brain.ans_1:
-        a+=1
+        x+=1
     elif user in brain.ans_2:
-        b+=2
+        y+=2
     else:
-        c+=3
+        z+=3
     return x,y,z
 def main():
     page_bg = """
