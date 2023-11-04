@@ -95,6 +95,7 @@ def main():
     background-position: center;
     background-size: cover;
     }        
+    @import url('https://fonts.cdnfonts.com/css/samarkan');
     </style>
     """
     st.markdown(
