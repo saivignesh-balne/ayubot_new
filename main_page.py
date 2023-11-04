@@ -103,7 +103,7 @@ def main():
     )
     st.markdown(
         """
-        <h2 style="text-align: center; color: black; font-family: 'Algerian';">PRAKRITI</h1>
+        <h2 style="text-align: center; color: black; font-family: 'Samarkan';">PRAKRITI</h1>
         """,
         unsafe_allow_html=True
     )
