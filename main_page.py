@@ -58,8 +58,8 @@ def ayurbot():
 
             if prompt in brain.c_yes:
                 questions = True
-                
-            if questions == True:
+
+            if prompt:
                bot_response = brain.questions[count]
                count+=1
 
