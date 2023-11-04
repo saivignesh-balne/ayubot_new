@@ -6,6 +6,7 @@ home = False
 count=0
 
 def ayurbot():
+    global count
     questions =False
     a=0
     b=0
