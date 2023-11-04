@@ -5,7 +5,9 @@ import random
 home = False
 
 def ayurbot():
-    count = 0
+    a=0
+    b=0
+    c=0
     page_bg = """
     <style>
     [data-testid="stAppViewContainer"] {
@@ -54,14 +56,47 @@ def ayurbot():
 
             if prompt in brain.c_yes:
                 bot_response = brain.questions[0]
-            
-            if prompt in brain.ans_1:
+
+            logic(prompt,a,b,c) 
+            if prompt!="":
                 bot_response = brain.questions[1]
+                
+            logic(prompt,a,b,c)
+            if prompt!="":
+                bot_response = brain.questions[2]
+                
+            logic(prompt,a,b,c)
+            if prompt!="":
+                bot_response = brain.questions[3]
+            
+            logic(prompt,a,b,c)
+            if prompt!="":
+                bot_response = brain.questions[4]
+                
+            logic(prompt,a,b,c)
+            if prompt!="":
+                bot_response = brain.questions[5]
+                result(a,b,c)
 
             message_placeholder.markdown(bot_response)
         st.session_state.messages.append({"role": "assistant","content": bot_response})
-        count+=1
 
+def result(x,y,z):
+    if a>b and a>c:
+        bot_response = "Congratulations your prakriti is VATA"
+    if b>c and b>a:
+        bot_response = "Congratulations your prakriti is PiTTA"
+    if c>a and c>b:
+        bot_response = "Congratulations your prakriti is KAPHA"
+
+def logic(user,x,y,z):
+    if user in brain.ans_1:
+        a+=1
+    elif user in brain.ans_2:
+        b+=2
+    else:
+        c+=3
+    return x,y,z
 def main():
     page_bg = """
     <style>
