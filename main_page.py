@@ -56,7 +56,7 @@ def ayurbot():
             if prompt:
                bot_response = brain.questions[count]
                count+=1
-                return count
+
 
             if prompt in brain.c_hi:
                 bot_response = "Please answer the following questions honestly and accurately."
@@ -67,6 +67,7 @@ def ayurbot():
         
             message_placeholder.markdown(bot_response)
         st.session_state.messages.append({"role": "assistant","content": bot_response})
+        return count
 
 def result(a,b,c):
     if a>b and a>c:
