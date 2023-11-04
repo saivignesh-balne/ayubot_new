@@ -32,7 +32,7 @@ def ayurbot():
     st.subheader('', divider='rainbow')
     st.markdown(
         """
-        <h5 style="color: #D3D3D3,font-weight: 50%;">Hi there! I am Chatbot specific to determine the Prakriti of an individual. So now lets determine your Prakriti!</h5>
+        <h5 style="color: #D3D3D3,font-weight: 50;">Hi there! I am Chatbot specific to determine the Prakriti of an individual. So now lets determine your Prakriti!</h5>
         """,
         unsafe_allow_html=True
     )
