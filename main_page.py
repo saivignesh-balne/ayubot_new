@@ -5,6 +5,7 @@ import random
 home = False
 
 def ayurbot():
+    questions =False
     count =0
     a=0
     b=0
@@ -56,6 +57,9 @@ def ayurbot():
                 bot_response = "Please answer the following questions honestly and accurately."
 
             if prompt in brain.c_yes:
+                questions = True
+                
+            if questions == True
                 for i in range(5):
                     bot_response = brain.questions[count]
                     count+=1
