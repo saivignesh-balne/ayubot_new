@@ -91,7 +91,7 @@ def main():
     <style>
     [data-testid="stAppViewContainer"] {
     background-image: url(https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg?cs=srgb&dl=pexels-no-name-66997.jpg&fm=jpg);
-    height = 100%;
+    height = 50%;
     background-position: center;
     background-size: cover;
     }        
