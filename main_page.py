@@ -3,10 +3,10 @@ import brain
 import random
 
 home = False
+count=0
 
 def ayurbot():
     questions =False
-    count =0
     a=0
     b=0
     c=0
@@ -55,9 +55,6 @@ def ayurbot():
 
             if prompt:
                bot_response = brain.questions[count]
-               count+=1
-
-
             if prompt in brain.c_hi:
                 bot_response = "Please answer the following questions honestly and accurately."
             if prompt in brain.c_yes:
@@ -67,6 +64,7 @@ def ayurbot():
         
             message_placeholder.markdown(bot_response)
         st.session_state.messages.append({"role": "assistant","content": bot_response})
+        count +=1
         return count
 
 def result(a,b,c):
