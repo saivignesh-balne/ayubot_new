@@ -55,7 +55,7 @@ def ayurbot():
             prompt = prompt.lower()
 
             if count==0:
-               bot_response = brain.questions[0]
+               bot_response = random.choice(brain.questions)
             if count ==1:
                bot_response = brain.questions[1]
             if prompt in brain.c_hi:
