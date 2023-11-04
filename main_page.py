@@ -88,16 +88,18 @@ def logic(user,x,y,z):
     return user,x,y,z
 def main():
     page_bg = """
-    <link href="https://fonts.cdnfonts.com/css/Samarkan" rel="stylesheet">
     <style>
-    @import url('https://fonts.cdnfonts.com/css/Samarkan');
     [data-testid="stAppViewContainer"] {
     background-image: url(https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg?cs=srgb&dl=pexels-no-name-66997.jpg&fm=jpg);
     height = 50%;
     background-position: center;
     background-size: cover;
     }        
-    
+    @font-face{
+        font-family : 'Samarkan';
+        src: url(fonts/Samarkan.ttf);
+        font-weight: normal;
+    }
     </style>
     """
     st.markdown(
