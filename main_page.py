@@ -25,7 +25,7 @@ def ayurbot():
     )
     st.markdown(
         """
-        <h2 style="text-align: center; color: white; font-family: 'Algerian';">AYURBOT</h1>
+        <h2 style="text-align: center; color: white; font-family: 'Times New Roman';">AYURBOT</h1>
         """,
         unsafe_allow_html=True
     )
@@ -94,11 +94,6 @@ def main():
     height = 50%;
     background-position: center;
     background-size: cover;
-    }        
-    @font-face{
-        font-family : 'Samarkan';
-        src: url(fonts/Samarkan.ttf);
-        font-weight: normal;
     }
     </style>
     """
@@ -108,7 +103,7 @@ def main():
     )
     st.markdown(
         """
-        <h2 style="text-align: center; color: white; font-family: 'Samarkan', sans-serif;">PRAKRITI</h1>
+        <h2 style="text-align: center; color: white; font-family: 'Times New Roman', sans-serif;">PRAKRITI</h1>
         """,
         unsafe_allow_html=True
     )
