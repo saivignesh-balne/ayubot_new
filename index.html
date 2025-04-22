@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AyurBot - Discover Your Prakriti</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@500&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="confetti-container"></div>
+    
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#home" class="nav-link active" data-page="home">Home</a></li>
+            <li><a href="#chat" class="nav-link" data-page="chat">Chat</a></li>
+            <li><a href="#assessment" class="nav-link" data-page="assessment">Assessment</a></li>
+            <li><a href="#results" class="nav-link" data-page="results">Results</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Welcome Screen -->
+        <div class="welcome-screen card glass animate__animated animate__fadeIn" id="home">
+            <div class="header">
+                <div class="ayurveda-icon pulse">🌿</div>
+                <h1>Discover Your Ayurvedic Constitution</h1>
+                <div class="instructions">
+                    <p>Welcome to AyurBot! This assessment will help determine your dominant dosha:</p>
+                    <ul class="features-list">
+                        <li><span>🌬️</span> Vata (Air & Space)</li>
+                        <li><span>🔥</span> Pitta (Fire & Water)</li>
+                        <li><span>🌊</span> Kapha (Earth & Water)</li>
+                    </ul>
+                    <div class="tip-box">
+                        <div class="tip-icon">💡</div>
+                        <p>Answer honestly based on your natural tendencies, not temporary states.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="action-buttons">
+                <button class="btn-primary pulse begin-btn animate__animated animate__pulse animate__infinite">Begin Your Assessment 🌿</button>
+                <button class="btn-secondary pulse chat-btn animate__animated animate__pulse animate__infinite">Chat with AyurBot 💬</button>
+            </div>
+        </div>
+        
+        <div class="chat-screen card glass hidden" id="chat">
+            <h2>Ayurvedic Chat Assistant</h2>
+            <div class="chat-container">
+                <div class="chat-messages">
+                    <div class="bot-message">
+                        <div class="message-content">
+                            <div class="bot-icon">🌿</div>
+                            <div class="message-text">
+                                <p>Namaste! I'm AyurBot. How can I help you with Ayurveda today?</p>
+                                <div class="quick-replies">
+                                    <button class="quick-reply">What's my dosha?</button>
+                                    <button class="quick-reply">Diet recommendations</button>
+                                    <button class="quick-reply">Lifestyle tips</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <textarea placeholder="Ask your Ayurvedic question..." rows="2"></textarea>
+                    <button class="btn-primary send-btn">Send</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Assessment Screen -->
+        <div class="assessment-screen card glass hidden" id="assessment">
+            <h2>Discover Your Dosha</h2>
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="question-counter"></div>
+            </div>
+            <div class="question-container">
+                <div class="question-header">
+                    <h2 class="question-text animate__animated animate__fadeIn"></h2>
+                    <div class="question-image"></div>
+                </div>
+                <div class="options-container"></div>
+                <div class="validation-message"></div>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn-secondary prev-btn">← Previous</button>
+                <button class="btn-secondary back-btn">↩ Back to Start</button>
+            </div>
+        </div>
+
+        <!-- Results Screen -->
+        <div class="result-screen card glass hidden" id="results">
+            <div class="result-header">
+                <h2 class="animate__animated animate__fadeIn">Your Ayurvedic Constitution</h2>
+                <div class="result-icon animate__animated animate__zoomIn"></div>
+            </div>
+            <div class="result-content">
+                <h3 class="dosha-title animate__animated animate__fadeIn"></h3>
+                <p class="dosha-description animate__animated animate__fadeIn"></p>
+                
+                <div class="dosha-stats">
+                    <div class="stat-container">
+                        <div class="stat-label">Vata</div>
+                        <div class="stat-bar vata"></div>
+                        <div class="stat-value">0%</div>
+                    </div>
+                    <div class="stat-container">
+                        <div class="stat-label">Pitta</div>
+                        <div class="stat-bar pitta"></div>
+                        <div class="stat-value">0%</div>
+                    </div>
+                    <div class="stat-container">
+                        <div class="stat-label">Kapha</div>
+                        <div class="stat-bar kapha"></div>
+                        <div class="stat-value">0%</div>
+                    </div>
+                </div>
+                
+                <div class="recommendations">
+                    <h4 class="animate__animated animate__fadeIn">Personalized Recommendations</h4>
+                    <div class="recommendation-cards"></div>
+                </div>
+                
+                <div class="result-nav">
+                    <button class="btn-secondary back-btn">↩ Retake Assessment</button>
+                    <button class="btn-primary download-btn">⬇ Download Results</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
